@@ -67,3 +67,9 @@ Clean up the biopics data so that you perform the following operation:
 On the top of the python standard library you can make use of any function from the pandas and numpy packages
 
 ### Answer: code3.py
+
+## Question No 4.
+
+There are houses in a society, we have to collect funds from each house for Christmas celebrations. Let us assume that we have a list l=[100, 200, 300, 400, 500, 300] which says house 1 can contribute max 100 $, house 2 can contribute max 200 $, house 3 can contribute max 300 $, house 4 can contribute max 400 $, house 5 can contribute max 500 $, house 6 can contribute max 300 $. For simplicity let us assume that adjacent houses belong to the same person. Write a python code to find the max fund from 2 houses only, such that no two houses are adjacent. In our case the max fund collected would be 800 (which is 500 from house 5 and 300 from house 3, 500+300=800).
+
+### Answer: code4.py
