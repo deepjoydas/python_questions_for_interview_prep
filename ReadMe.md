@@ -65,3 +65,5 @@ Clean up the biopics data so that you perform the following operation:
 9. Sort the rows in descending order by earnings
 
 On the top of the python standard library you can make use of any function from the pandas and numpy packages
+
+### Answer: code3.py
