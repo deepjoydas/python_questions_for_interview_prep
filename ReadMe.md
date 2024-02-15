@@ -20,13 +20,13 @@ def solution(B)
 ```
 That given an array B containing of N strings denoting rows of the array, return True if is it possible for the assassin to sneak from their current location to the bottom right cell of the board undetected and false otherwise.
 
-- 1. Given B=["X.....>","..v..X.",".>..X..","A......"], your function should return False. All available paths lead through a filed observed by a guard
+1. Given B=["X.....>","..v..X.",".>..X..","A......"], your function should return False. All available paths lead through a filed observed by a guard
 
-- 2. Given B=["...Xv","AX..^",".XX.."], your function should return True. The guard in the second row is blocking the other one from watching the bottom right square.
+2. Given B=["...Xv","AX..^",".XX.."], your function should return True. The guard in the second row is blocking the other one from watching the bottom right square.
 
-- 3. Given B=["...",">.A"] your function should return False, as the assassin gets spotted right at the start.
+3. Given B=["...",">.A"] your function should return False, as the assassin gets spotted right at the start.
 
-- 4. Given B=["A.v",..."], your function should return False. Its not possible for the assassin to enter the bottom right cell undetected as the cell is observed
+4. Given B=["A.v",..."], your function should return False. Its not possible for the assassin to enter the bottom right cell undetected as the cell is observed
 
 - Assume N is an integer with range [1..500]
 - all strings in B are of the same length M from range [1..500]
@@ -52,16 +52,16 @@ The original biopics data are made available by the analytics website FiveThirty
 
 Write a function named ```process_data()``` that takes no arguments. The function should lead the biopics data (this has been implemented for you), perform data manipulations described below and return a pandas data frame with manipulated data.
 
-Clean up the biopics data:
+Clean up the biopics data so that you perform the following operation:
 
-Filter our duplicated row
-Rename the variable called box_office to earnings
-Filter out rows for which earnings are missing (i.e. they are NaN)
-Keep only movies relased in the year 1990 or later
-Convert the type of type_of_subject and country to Categorical 
-Create a new variable called lead_actor_actress_known that is False if lead_actor_actress is NaN and True otherwise
-Update earnings which they are expressed in million of dollars instead of dollars 
-Recorder the columns in the data frame such that thet are in the following order: title, year_release, # earnings, country, type_of_subject, lead_actor_actress, lead_actor_actress_known
-Sort the rows in descending order by earnings
+1. Filter our duplicated row
+2. Rename the variable called box_office to earnings
+3. Filter out rows for which earnings are missing (i.e. they are NaN)
+4. Keep only movies relased in the year 1990 or later
+5. Convert the type of type_of_subject and country to Categorical 
+6. Create a new variable called lead_actor_actress_known that is False if lead_actor_actress is NaN and True otherwise
+7. Update earnings which they are expressed in million of dollars instead of dollars 
+8. Recorder the columns in the data frame such that thet are in the following order: title, year_release, # earnings, country, type_of_subject, lead_actor_actress, lead_actor_actress_known
+9. Sort the rows in descending order by earnings
 
 On the top of the python standard library you can make use of any function from the pandas and numpy packages
