@@ -32,3 +32,33 @@
             - there is no guard or wall on B[N-1][M-1]
             - every string in B consists only of the following characters '.','X','<','>','v','^' and/or 'A'
 
+### Answer: code2.py
+
+# 3. You are given a data set called biopics.csv containing information on biographical movies. Your task is to perform some data manipulations on the biopics data.
+
+# Data Overview
+
+# The original biopics data are made available by the analytics website FiveThirtyEight. You will be working with a preprocessed version, available for you at biopics.csv. It contains the following columns:
+
+# title - the movie's title
+# country - country of production
+# year_release - the year the movie was released
+# box_office - movie's earning at the box office, in US$
+# type_of_subject - the occupation of the movie's subject or their reason for recognition
+# lead_actor_actress - the name of the actor or actress who played the subject
+
+# Write a function named process_data() that takes no arguments. The function should lead the biopics data (this has been implemented for you), perform data manipulations described below and return a pandas data frame with manipulated data.
+
+# Clean up the biopics data:
+
+# Filter our duplicated row
+# Rename the variable called box_office to earnings
+# Filter out rows for which earnings are missing (i.e. they are NaN)
+# Keep only movies relased in the year 1990 or later
+# Convert the type of type_of_subject and country to Categorical 
+# Create a new variable called lead_actor_actress_known that is False if lead_actor_actress is NaN and True otherwise
+# Update earnings which they are expressed in million of dollars instead of dollars 
+# Recorder the columns in the data frame such that thet are in the following order: title, year_release, # earnings, country, type_of_subject, lead_actor_actress, lead_actor_actress_known
+# Sort the rows in descending order by earnings
+
+# On the top of the python standard library you can make use of any function from the pandas and numpy packages
