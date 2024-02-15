@@ -13,13 +13,11 @@
 
 ## Question No 2
     We are given a two-dimensional board of size NxM (N rows and M columns). Each filed of  the board can be empty ('.') may contain an obstacle ('X') or may have a character in it. The character might be either an assassin ('A') or a guard. Each guard stands still and looks straight ahead in the direction they are facing. Every guard look sin one of four directions (up, down, left or right on the board) and is represented by one of four symbols. A guard denoted by '<' is looking to the left; by '>', to the right; '^', up; or 'v', down. The guards can see everything in a straight line in the direction in which that are facing as far as the first obstacle ('X' or any other guard) or the edge of the board. The assassin can move from the current field to any other empty field with a shared edge. The assassin cannot move onto fields containing obstacles or enemies. 
-
-```
+```python
 Write a function in python:
     
 def solution(B)
 ```
-
     That given an array B containing of N strings denoting rows of the array, return True if is it possible for the assassin to sneak from their current location to the bottom right cell of the board undetected and false otherwise.
 
         - 1. Given B=["X.....>","..v..X.",".>..X..","A......"], your function should return False. All available paths lead through a filed observed by a guard
